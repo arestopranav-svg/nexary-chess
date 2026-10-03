@@ -1,0 +1,14 @@
+{
+  "name": "nexary-foundation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.6" },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test \"test/**/*.test.ts\"",
+    "validate": "npm run type-check && npm run test"
+  },
+  "dependencies": { "chess.js": "^1.0.0" },
+  "devDependencies": { "typescript": "^5.8.0", "@types/node": "^22.0.0" }
+}

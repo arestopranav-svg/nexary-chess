@@ -1,0 +1,56 @@
+/* NEXARY design tokens. AI-2 owns the VALUES; components must only reference these variables. */
+:root {
+  /* surfaces & text */
+  --bg: #07090d;
+  --surface: #0e131a;
+  --surface-raised: #151c26;
+  --border: #243040;
+  --text-primary: #e8eef6;
+  --text-secondary: #9aa8ba;
+  --text-disabled: #5b6778;
+
+  /* accents & status */
+  --accent-cyan: #3de0ff;
+  --accent-cyan-dim: #1b7f94;
+  --success: #3ddc97;
+  --warning: #ffb84d;
+  --danger: #ff5c6c;
+
+  /* board */
+  --board-light: #8a97a8;
+  --board-dark: #1a2230;
+  --board-highlight-move: rgb(61 224 255 / 0.35);
+  --board-highlight-check: rgb(255 92 108 / 0.55);
+  --board-legal-dot: rgb(232 238 246 / 0.35);
+  --board-border: #2c394b;
+
+  /* pieces */
+  --piece-white: #f4efe6;
+  --piece-white-stroke: #b9b0a0;
+  --piece-black: #2a2f38;
+  --piece-black-stroke: #0b0d11;
+
+  /* shape, depth, spacing */
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --shadow-premium: 0 1px 0 rgb(255 255 255 / 0.04) inset, 0 12px 40px rgb(0 0 0 / 0.55);
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-6: 24px; --space-8: 32px; --space-12: 48px;
+
+  /* typography */
+  --font-ui: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --font-size-sm: 0.8125rem; --font-size-md: 1rem; --font-size-lg: 1.25rem; --font-size-clock: 2rem;
+
+  /* motion */
+  --ease-luxury: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 120ms; --dur-base: 220ms; --dur-slow: 420ms;
+
+  /* layout */
+  --touch-target-min: 44px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-fast: 0ms; --dur-base: 0ms; --dur-slow: 0ms; }
+}
